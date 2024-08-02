@@ -20,7 +20,7 @@ C:\Users\username\qmk_firmware\keyboards\gmmk\pro\rev1\ansi\keymaps\
 
 ## QMK Pro for OpenRGB
 
-To compile **`qmmk_pro_OpenRGB`**, follow the instructions by [ringowu1234 on Reddit](https://www.reddit.com/user/ringowu1234/).
+To compile **`qmmk_pro_OpenRGB`**, follow the instructions by [ringowu1234 on Reddit](https://www.reddit.com/r/OpenRGB/comments/105djz3/comment/j3vfnxc/).
 
 ### GMMK Pro Address for OpenRGB
 
@@ -92,9 +92,9 @@ If the links are unavailable:
 
 ## Ready Firmware
 
-Pre-compiled firmware:
+Pre-compiled firmware gmmk pro ANSI ver.1 :
 
-- QMMK Open RGB
+- QMMK Open RGB -  (add OpenRGB support on Trwnh keyboard layout)
 - QMMK VIA
 
 ## Layers
