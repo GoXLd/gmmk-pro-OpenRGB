@@ -2,11 +2,21 @@
 
 Для компиляции **qmmk_pro_OpenRGB** нужно сначала следовать инструкциям пользователя https://www.reddit.com/user/ringowu1234/ 
 
-Для понимания 
-https://www.reddit.com/r/OpenRGB/comments/xmaisz/beginner_general_guide_to_getting_feker_ik75/
-https://www.reddit.com/r/OpenRGB/comments/ysu3u7/gmmk_pro_openrgb_qmk_complete_how_to_add_per_key/
-https://www.reddit.com/r/OpenRGB/comments/105djz3/comment/j3vfnxc/
+Адрес GMMK Pro для OpenRGB
 
+NAME: GMMK Pro
+USB VID: 320f
+USB PID: 5044
+
+Для понимания 
+Beginner General Guide to Getting Feker IK75 QMK/VIA Version (and other keebs) Working with OpenRGB https://www.reddit.com/r/OpenRGB/comments/xmaisz/beginner_general_guide_to_getting_feker_ik75/
+GMMK Pro OpenRGB QMK Complete. How to Add Per Key Adjustment function? https://www.reddit.com/r/OpenRGB/comments/ysu3u7/gmmk_pro_openrgb_qmk_complete_how_to_add_per_key/
+Компиляция прошивки для OpenRGB не возмиожна из стандартной qmk_firmware https://www.reddit.com/r/OpenRGB/comments/105djz3/comment/j3vfnxc/
+
+Если информация по ссылкам недоступна:
+<details>
+  <summary>Компиляция прошивки для OpenRGB не возмиожна из стандартной qmk_firmware https://www.reddit.com/r/OpenRGB/comments/105djz3/comment/j3vfnxc/</summary>
+</details>
 <details>
   <summary>Компиляция прошивки для OpenRGB не возмиожна из стандартной qmk_firmware https://www.reddit.com/r/OpenRGB/comments/105djz3/comment/j3vfnxc/</summary>
   Below are the steps I took to enable OpenRGB on my GMMK Pro. As mentioned in many places, I followed this guide for most part, with some modification after encountering issues. I have no prior coding nor QMK experience. Any suggestions/corrections welcomed.

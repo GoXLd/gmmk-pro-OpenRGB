@@ -179,6 +179,8 @@ bool rgb_matrix_indicators_user(void)
 	rgb_matrix_set_color(49, 70, 255, 88); // Alt_R		rgb(70, 255,88)
 	rgb_matrix_set_color(55, 0, 255, 156); // Fn		rgb(0, 255, 156)
 	rgb_matrix_set_color(65, 0, 255, 156); // Ct_R		rgb(0, 255, 156)
+
+	return false;
 }
 
 #endif // RGB_MATRIX_ENABLE
