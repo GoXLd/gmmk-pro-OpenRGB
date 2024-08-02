@@ -1,4 +1,4 @@
-// Copyright 2021 a (@trwnh on Github)
+// Copyright 2024 a (@GoXLd on Github)
 // SPDX-License-Identifier: GPL-2.0-or-later
 
 #include QMK_KEYBOARD_H
@@ -54,112 +54,130 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
 //  80, led 05   4, Sh_L   10, Z      16, X       22, C    27, V    32, B       38, N    43, M    48, ,<      54, .<   60, /?               90, Sh_R   94, Up        82, End        81, led 16
 //  83, led 06   5, Ct_L   11,Win_L   17, Alt_L                     33, SPACE                     49, Alt_R   55, FN             65, Ct_R   95, Left   97, Down      79, Right      84, led 17
 //  87, led 07                                                                                                                                                                      88, led 18
-//  91, led 08
+//  91, led 08																																																																																			92, led 19
 
 #ifdef RGB_MATRIX_ENABLE
-	static void set_rgb_scroll_leds_on(void);
-	static void set_rgb_scroll_leds_off(void);
 
-	static void set_rgb_scroll_leds_on(void) {
-		rgb_matrix_set_color(72, 255, 255, 255); // Under Rotary (HOME)
-	}
+bool rgb_matrix_indicators_user(void)
+{
+	// Left side
+	rgb_matrix_set_color(67, 239, 65, 53);	 // Left LED 01	rgb(239,65,53)
+	rgb_matrix_set_color(70, 239, 65, 53);	 // Left LED 02	rgb(239,65,53)
+	rgb_matrix_set_color(73, 247, 160, 154); // Left LED 03	rgb(247,160,154)
+	rgb_matrix_set_color(76, 255, 255, 255); // Left LED 04	rgb(255,255,255)
+	rgb_matrix_set_color(80, 255, 255, 255); // Left LED 05	rgb(255,255,255)
+	rgb_matrix_set_color(83, 128, 170, 210); // Left LED 06	rgb(128,170,210)
+	rgb_matrix_set_color(87, 0, 85, 164);		 // Left LED 07	rgb(0,85,164)
+	rgb_matrix_set_color(91, 0, 85, 164);		 // Left LED 08	rgb(0,85,164)
 
-	static void set_rgb_scroll_leds_off(void) {
-		rgb_matrix_set_color(72, 0, 0, 0); // Under Rotary (HOME)
-	}
+	// Right side
+	rgb_matrix_set_color(68, 239, 65, 53);	 // Right LED 12	rgb(239,65,53)
+	rgb_matrix_set_color(71, 239, 65, 53);	 // Right LED 13	rgb(239,65,53)
+	rgb_matrix_set_color(74, 247, 160, 154); // Right LED 14	rgb(247,160,154)
+	rgb_matrix_set_color(77, 255, 255, 255); // Right LED 15	rgb(255,255,255)
+	rgb_matrix_set_color(81, 255, 255, 255); // Right LED 16	rgb(255,255,255)
+	rgb_matrix_set_color(84, 128, 170, 210); // Right LED 17	rgb(128,170,210)
+	rgb_matrix_set_color(88, 0, 85, 164);		 // Right LED 18	rgb(0,85,164)
+	rgb_matrix_set_color(92, 0, 85, 164);		 // Right LED 19	rgb(0,85,164)
 
-	bool rgb_matrix_indicators_user(void) {
-		// Left side rainbow
-		rgb_matrix_set_color(67, 255,   0,   0);	// Left LED 01
-		rgb_matrix_set_color(70, 255, 127,   0);	// Left LED 02
-		rgb_matrix_set_color(73, 255, 255,   0);	// Left LED 03
-		rgb_matrix_set_color(76,   0, 255,   0);	// Left LED 04
-		rgb_matrix_set_color(80,   0,   0, 255);	// Left LED 05
-		rgb_matrix_set_color(83,  46,  43,  95);	// Left LED 06
-		rgb_matrix_set_color(87, 139,   0, 255);	// Left LED 07
-		rgb_matrix_set_color(91, 255, 255, 255);	// Left LED 08
+	// TOP Line keys
+	rgb_matrix_set_color(0, 255, 255, 255);	 // ESC	rgb(142,142,142)
+	rgb_matrix_set_color(6, 252, 48, 0);		 // F1	rgb(252,48,0)
+	rgb_matrix_set_color(12, 255, 255, 255); // F2 rgb(142,142,142)
+	rgb_matrix_set_color(18, 255, 255, 255); // F3	rgb(142,142,142)
+	rgb_matrix_set_color(23, 255, 255, 255); // F4	rgb(142,142,142)
+	rgb_matrix_set_color(28, 13, 94, 2);		 // F5	rgb(13, 94, 2)
+	rgb_matrix_set_color(34, 13, 94, 2);		 // F6	rgb(13, 94, 2)
+	rgb_matrix_set_color(39, 13, 94, 2);		 // F7	rgb(13, 94, 2)
+	rgb_matrix_set_color(44, 13, 94, 2);		 // F8	rgb(13, 94, 2)
 
-		// Right side rainbow
-		rgb_matrix_set_color(68, 255,   0,   0);	// Right LED 12
-		rgb_matrix_set_color(71, 255, 127,   0);	// Right LED 13
-		rgb_matrix_set_color(74, 255, 255,   0);	// Right LED 14
-		rgb_matrix_set_color(77,   0, 255,   0);	// Right LED 15
-		rgb_matrix_set_color(81,   0,   0, 255);	// Right LED 16
-		rgb_matrix_set_color(84,  46,  43,  95);	// Right LED 17
-		rgb_matrix_set_color(88, 139,   0, 255);	// Right LED 18
-		rgb_matrix_set_color(92, 255, 255, 255);	// Right LED 19
-		
-		//TOP Line keys
-		rgb_matrix_set_color( 0, 255, 255, 255);	//ESC	rgb(142,142,142)
-		rgb_matrix_set_color( 6, 252, 48, 0);	//F1	rgb(252,48,0)
-		rgb_matrix_set_color( 12, 255, 255, 255);	//F2 rgb(142,142,142)
-		rgb_matrix_set_color( 18, 255, 255, 255);	//F3	rgb(142,142,142)
-		rgb_matrix_set_color( 23, 255, 255, 255);	//F4	rgb(142,142,142)
-		rgb_matrix_set_color( 28, 13, 94, 2);	//F5	rgb(13, 94, 2)
-		rgb_matrix_set_color( 34, 13, 94, 2);	//F6	rgb(13, 94, 2)
-		rgb_matrix_set_color( 39, 13, 94, 2);	//F7	rgb(13, 94, 2)
-		rgb_matrix_set_color( 44, 13, 94, 2);	//F8	rgb(13, 94, 2)
+	rgb_matrix_set_color(50, 116, 83, 3); // F9	rgb(116, 83, 3)
+	rgb_matrix_set_color(56, 73, 26, 1);	// F10	rgb(73, 26, 1)
+	rgb_matrix_set_color(61, 73, 26, 1);	// F11	rgb(73, 26, 1)
+	rgb_matrix_set_color(66, 73, 26, 1);	// F12	rgb(73, 26, 1)
 
-		rgb_matrix_set_color( 50, 116, 83, 3);	//F9	rgb(116, 83, 3)
-		rgb_matrix_set_color( 56, 73, 26, 1);	//F10	rgb(73, 26, 1)
-		rgb_matrix_set_color( 61, 75, 21, 17);	//F11	rgb(75, 21, 17)
-		rgb_matrix_set_color( 66, 75, 21, 17);	//F12	rgb(75, 21, 17)
+	rgb_matrix_set_color(69, 255, 255, 255); // Prt	rgb(255, 255, 255)
 
-		rgb_matrix_set_color( 69, 255, 255, 255);	//Prt	rgb(255, 255, 255)
+	// Right Keys
+	rgb_matrix_set_color(72, 0, 105, 145); // Home	rgb(0, 105, 145)
+	rgb_matrix_set_color(75, 0, 105, 145); // PgUp	rgb(0, 105, 145)
+	rgb_matrix_set_color(86, 0, 105, 145); // PgDown	rgb(0, 105, 145)
+	rgb_matrix_set_color(82, 0, 13, 89);	 // End	rgb(0, 13, 89)
 
-		//Right Keys
-		rgb_matrix_set_color( 72, 0, 105, 145);	//Home	rgb(0, 105, 145)
-		rgb_matrix_set_color( 75, 0, 105, 145);	//PgUp	rgb(0, 105, 145)
-		rgb_matrix_set_color( 86, 0, 105, 145);	//PgDown	rgb(0, 105, 145)
-		rgb_matrix_set_color( 82, 0, 13, 89);	//End	rgb(0, 13, 89)
+	// Arrows
+	rgb_matrix_set_color(94, 0, 221, 9); // Up	rgb(0, 221, 9)
+	rgb_matrix_set_color(95, 0, 221, 9); // Left	rgb(0, 221, 9)
+	rgb_matrix_set_color(97, 0, 221, 9); // Down	rgb(0, 221, 9)
+	rgb_matrix_set_color(79, 0, 221, 9); // Right	rgb(0, 221, 9)
 
-		//Arrows
-		rgb_matrix_set_color( 94, 0, 221, 9);	//Up	rgb(0, 221, 9)
-		rgb_matrix_set_color( 95, 0, 221, 9);	//Left	rgb(0, 221, 9)
-		rgb_matrix_set_color( 97, 0, 221, 9);	//Down	rgb(0, 221, 9)
-		rgb_matrix_set_color( 79, 0, 221, 9);	//Right	rgb(0, 221, 9)
+	// Numbers line
+	rgb_matrix_set_color(1, 68, 2, 0);		 // ~ rgb(68, 2, 0)
+	rgb_matrix_set_color(7, 223, 93, 21);	 // 1		rgb(223, 93, 21)
+	rgb_matrix_set_color(13, 223, 93, 21); // 2		rgb(223, 93, 21)
+	rgb_matrix_set_color(19, 223, 93, 21); // 3		rgb(223, 93, 21)
+	rgb_matrix_set_color(24, 223, 93, 21); // 4		rgb(223, 93, 21)
+	rgb_matrix_set_color(29, 223, 93, 21); // 5		rgb(223, 93, 21)
+	rgb_matrix_set_color(35, 223, 93, 21); // 6		rgb(223, 93, 21)
+	rgb_matrix_set_color(40, 223, 93, 21); // 7		rgb(223, 93, 21)
+	rgb_matrix_set_color(45, 223, 93, 21); // 8		rgb(223, 93, 21)
+	rgb_matrix_set_color(51, 223, 93, 21); // 9		rgb(223, 93, 21)
+	rgb_matrix_set_color(57, 223, 93, 21); // 0		rgb(223, 93, 21)
+	rgb_matrix_set_color(62, 223, 93, 21); // -_		rgb(223, 93, 21)
+	rgb_matrix_set_color(78, 223, 93, 21); // =+		rgb(223, 93, 21)
+	rgb_matrix_set_color(85, 255, 130, 0); // BackSpc	rgb(255, 130, 0)
 
-		//Numbers line
-		
+	// First Letters line
+	rgb_matrix_set_color(2, 240, 70, 0);		 // Tab rgb(240, 70, 0)
+	rgb_matrix_set_color(8, 255, 255, 255);	 // Q
+	rgb_matrix_set_color(14, 255, 255, 255); // W
+	rgb_matrix_set_color(20, 255, 255, 255); // E
+	rgb_matrix_set_color(25, 255, 255, 255); // R
+	rgb_matrix_set_color(30, 255, 255, 255); // T
+	rgb_matrix_set_color(36, 255, 255, 255); // Y
+	rgb_matrix_set_color(41, 255, 255, 255); // U
+	rgb_matrix_set_color(46, 255, 255, 255); // I
+	rgb_matrix_set_color(52, 255, 255, 255); // O
+	rgb_matrix_set_color(58, 255, 255, 255); // P
+	rgb_matrix_set_color(63, 255, 255, 255); // [{
+	rgb_matrix_set_color(89, 255, 255, 255); // ]}
+	rgb_matrix_set_color(93, 116, 83, 3);		 // \| rgb(116, 83, 3)
 
-		// Letters 
-		rgb_matrix_set_color( 8, 255, 255, 255);	// Q
-		rgb_matrix_set_color(14, 255, 255, 255);	// W
-		rgb_matrix_set_color(20, 255, 255, 255);	// E
-		rgb_matrix_set_color(25, 255, 255, 255);	// R
-		rgb_matrix_set_color(30, 255, 255, 255);	// T
-		rgb_matrix_set_color(36, 255, 255, 255);	// Y
-		rgb_matrix_set_color(41, 255, 255, 255);	// U
-		rgb_matrix_set_color(46, 255, 255, 255);	// I
-		rgb_matrix_set_color(52, 255, 255, 255);	// O
-		rgb_matrix_set_color(58, 255, 255, 255);	// P
+	// Second Letters line
+	rgb_matrix_set_color(3, 13, 94, 2);			 // Caps		rgb(13, 94, 2)
+	rgb_matrix_set_color(9, 255, 255, 255);	 // A
+	rgb_matrix_set_color(15, 255, 255, 255); // S
+	rgb_matrix_set_color(21, 255, 255, 255); // D
+	rgb_matrix_set_color(26, 255, 255, 255); // F
+	rgb_matrix_set_color(31, 255, 255, 255); // G
+	rgb_matrix_set_color(37, 255, 255, 255); // H
+	rgb_matrix_set_color(42, 255, 255, 255); // J
+	rgb_matrix_set_color(47, 255, 255, 255); // K
+	rgb_matrix_set_color(53, 255, 255, 255); // L
+	rgb_matrix_set_color(59, 255, 255, 255); // ;:
+	rgb_matrix_set_color(64, 255, 255, 255); // '"
+	rgb_matrix_set_color(96, 13, 94, 2);		 // Enter		rgb(13, 94, 2)
 
-		rgb_matrix_set_color( 9, 255, 255, 255);	// A
-		rgb_matrix_set_color(15, 255, 255, 255);	// S
-		rgb_matrix_set_color(21, 255, 255, 255);	// D
-		rgb_matrix_set_color(26, 255, 255, 255);	// F
-		rgb_matrix_set_color(31, 255, 255, 255);	// G
-		rgb_matrix_set_color(37, 255, 255, 255);	// H
-		rgb_matrix_set_color(42, 255, 255, 255);	// J
-		rgb_matrix_set_color(47, 255, 255, 255);	// K
-		rgb_matrix_set_color(53, 255, 255, 255);	// L
+	// Third Letters line
+	rgb_matrix_set_color(4, 6, 255, 16);		 // L_Shift		rgb(6, 255,16)
+	rgb_matrix_set_color(10, 255, 255, 255); // Z
+	rgb_matrix_set_color(16, 255, 255, 255); // X
+	rgb_matrix_set_color(22, 255, 255, 255); // C
+	rgb_matrix_set_color(27, 255, 255, 255); // V
+	rgb_matrix_set_color(32, 255, 255, 255); // B
+	rgb_matrix_set_color(38, 255, 255, 255); // N
+	rgb_matrix_set_color(43, 255, 255, 255); // M
+	rgb_matrix_set_color(48, 255, 255, 255); // ,<
+	rgb_matrix_set_color(54, 255, 255, 255); // .<
+	rgb_matrix_set_color(90, 6, 255, 16);		 // Sh_R rgb(6, 255,16)
 
-		rgb_matrix_set_color(10, 255, 255, 255);	// Z
-		rgb_matrix_set_color(16, 255, 255, 255);	// X
-		rgb_matrix_set_color(22, 255, 255, 255);	// C
-		rgb_matrix_set_color(27, 255, 255, 255);	// V
-		rgb_matrix_set_color(32, 255, 255, 255);	// B
-		rgb_matrix_set_color(38, 255, 255, 255);	// N
-		rgb_matrix_set_color(43, 255, 255, 255);	// M
-
-		if (host_keyboard_led_state().scroll_lock) {
-			set_rgb_scroll_leds_on();
-		} else {
-			if (rgb_matrix_get_flags() == LED_FLAG_NONE){
-			set_rgb_scroll_leds_off();
-			}
-		}
-    return false;  
-	}
+	// Last line
+	rgb_matrix_set_color(5, 0, 255, 156);	 // Ct_L rgb(0, 255, 156)
+	rgb_matrix_set_color(11, 0, 255, 156); // Win_L		rgb(0, 255, 156)
+	rgb_matrix_set_color(17, 70, 255, 88); // Alt_L		rgb(70, 255,88)
+	rgb_matrix_set_color(33, 70, 255, 88); // Space		rgb(70, 255,88)
+	rgb_matrix_set_color(49, 70, 255, 88); // Alt_R		rgb(70, 255,88)
+	rgb_matrix_set_color(55, 0, 255, 156); // Fn		rgb(0, 255, 156)
+	rgb_matrix_set_color(65, 0, 255, 156); // Ct_R		rgb(0, 255, 156)
+}
 
 #endif // RGB_MATRIX_ENABLE

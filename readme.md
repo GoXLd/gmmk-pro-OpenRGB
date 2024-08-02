@@ -2,8 +2,13 @@
 
 Для компиляции **qmmk_pro_OpenRGB** нужно сначала следовать инструкциям пользователя https://www.reddit.com/user/ringowu1234/ 
 
+Для понимания 
+https://www.reddit.com/r/OpenRGB/comments/xmaisz/beginner_general_guide_to_getting_feker_ik75/
+https://www.reddit.com/r/OpenRGB/comments/ysu3u7/gmmk_pro_openrgb_qmk_complete_how_to_add_per_key/
+https://www.reddit.com/r/OpenRGB/comments/105djz3/comment/j3vfnxc/
+
 <details>
-  <summary>Сообщение с Реддита</summary>
+  <summary>Компиляция прошивки для OpenRGB не возмиожна из стандартной qmk_firmware https://www.reddit.com/r/OpenRGB/comments/105djz3/comment/j3vfnxc/</summary>
   Below are the steps I took to enable OpenRGB on my GMMK Pro. As mentioned in many places, I followed this guide for most part, with some modification after encountering issues. I have no prior coding nor QMK experience. Any suggestions/corrections welcomed.
 
 First, install QMK MSYS from here. Once installation is finished, DO NOT DO "QMK SETUP". I will explain this later.
