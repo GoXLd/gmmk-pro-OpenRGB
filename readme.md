@@ -19,7 +19,7 @@ C:\Users\username\qmk_firmware\keyboards\gmmk\pro\rev1\ansi\keymaps\
 ```
 
 ## QMK Pro for OpenRGB
-!OpenRGB(files\img\photo_2024-08-09_10-14-18.jpg)
+![OpenRGB](files/img/photo_2024-08-09_10-14-18.jpg)
 To compile **`qmmk_pro_OpenRGB`**, follow the instructions by [ringowu1234 on Reddit](https://www.reddit.com/r/OpenRGB/comments/105djz3/comment/j3vfnxc/).
 
 ### GMMK Pro Address for OpenRGB
@@ -92,10 +92,10 @@ If the links are unavailable:
 
 ## Ready Firmware
 
-Pre-compiled firmware gmmk pro ANSI ver.1 :
+Pre-compiled firmware gmmk pro ANSI ver.1:
 
-- QMMK Open RGB -  (add OpenRGB support on Trwnh keyboard layout) https://github.com/GoXLd/gmmk-pro-OpenRGB/blob/main/files/gmmk_pro_rev1_ansi_qmmk_pro_OpenRGB.bin
-- QMMK VIA https://github.com/GoXLd/gmmk-pro-OpenRGB/blob/main/files/gmmk_pro_rev1_ansi_qmmk_pro_VIA.bin
+- [QMMK Open RGB](https://github.com/GoXLd/gmmk-pro-OpenRGB/blob/main/files/gmmk_pro_rev1_ansi_qmmk_pro_OpenRGB.bin) - (add OpenRGB support on Trwnh keyboard layout)
+- [QMMK VIA](https://github.com/GoXLd/gmmk-pro-OpenRGB/blob/main/files/gmmk_pro_rev1_ansi_qmmk_pro_VIA.bin)
 
 ## Layers
 
@@ -120,3 +120,15 @@ Special thanks to:
 - [@trwnh (GitHub)](https://github.com/trwnh)
 - [@ringowu1234 (Reddit)](https://www.reddit.com/user/ringowu1234/)
 - [@Ryuu_Dango (Reddit)](https://www.reddit.com/user/Ryuu_Dango)
+
+## Repository Description
+
+1) You can use the firmware with OpenRGB support to customize colors for each key individually. However, in this case, the lighting settings are stored in the computer's memory. You will need to save the profile file and transfer it to a new device every time. Despite this, the lighting configuration process is straightforward. Another significant advantage is the concise configuration provided by the user.
+
+2) Alternatively, you can manually set all the colors for each key in `keymap.c`.
++ VIA support is available.
++ Lighting works without third-party programs running in the background.
+
+- Setting up the colors is more complicated.
+- No RGB effects are available.
+- Brightness adjustment is not available (please suggest solutions in the comments).
