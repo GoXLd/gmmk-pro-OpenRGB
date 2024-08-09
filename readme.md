@@ -2,6 +2,18 @@
 
 ![qmmk_pro VIA preview](files/img/photo_2024-08-09_10-50-21.jpg)
 
+## Repository Description
+
+1) You can use the firmware with OpenRGB support to customize colors for each key individually. However, in this case, the lighting settings are stored in the computer's memory. You will need to save the profile file and transfer it to a new device every time. Despite this, the lighting configuration process is straightforward. Another significant advantage is the concise configuration provided by the user.
+
+2) Alternatively, you can manually set all the colors for each key in `keymap.c`.
++ VIA support is available.
++ Lighting works without third-party programs running in the background.
+
+- Setting up the colors is more complicated.
+- No RGB effects are available.
+- Brightness adjustment is not available (please suggest solutions in the comments).
+
 # QMK Firmware Compilation Guide
 
 ## Table of Contents
@@ -11,7 +23,6 @@
 4. [Ready Firmware](#ready-firmware)
 5. [Layers](#layers)
 6. [Miscellaneous](#miscellaneous)
-7. [Acknowledgments](#acknowledgments)
 
 ## QMK Firmware Compilation
 
@@ -123,15 +134,3 @@ Special thanks to:
 - [@trwnh (GitHub)](https://github.com/trwnh)
 - [@ringowu1234 (Reddit)](https://www.reddit.com/user/ringowu1234/)
 - [@Ryuu_Dango (Reddit)](https://www.reddit.com/user/Ryuu_Dango)
-
-## Repository Description
-
-1) You can use the firmware with OpenRGB support to customize colors for each key individually. However, in this case, the lighting settings are stored in the computer's memory. You will need to save the profile file and transfer it to a new device every time. Despite this, the lighting configuration process is straightforward. Another significant advantage is the concise configuration provided by the user.
-
-2) Alternatively, you can manually set all the colors for each key in `keymap.c`.
-+ VIA support is available.
-+ Lighting works without third-party programs running in the background.
-
-- Setting up the colors is more complicated.
-- No RGB effects are available.
-- Brightness adjustment is not available (please suggest solutions in the comments).
