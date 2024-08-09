@@ -1,6 +1,6 @@
 # "qmmk_pro" - custom QMK firmware for Glorious GMMK Pro rev.1 
 
-![qmmk_pro VIA preview](files\img\photo_2024-08-09_10-50-21.jpg)
+![qmmk_pro VIA preview](files/img/photo_2024-08-09_10-50-21.jpg)
 
 # QMK Firmware Compilation Guide
 
