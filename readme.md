@@ -19,7 +19,7 @@ C:\Users\username\qmk_firmware\keyboards\gmmk\pro\rev1\ansi\keymaps\
 ```
 
 ## QMK Pro for OpenRGB
-
+![OpenRGB(files\img\photo_2024-08-09_10-14-18.jpg)
 To compile **`qmmk_pro_OpenRGB`**, follow the instructions by [ringowu1234 on Reddit](https://www.reddit.com/r/OpenRGB/comments/105djz3/comment/j3vfnxc/).
 
 ### GMMK Pro Address for OpenRGB
@@ -94,8 +94,8 @@ If the links are unavailable:
 
 Pre-compiled firmware gmmk pro ANSI ver.1 :
 
-- QMMK Open RGB -  (add OpenRGB support on Trwnh keyboard layout)
-- QMMK VIA
+- QMMK Open RGB -  (add OpenRGB support on Trwnh keyboard layout) https://github.com/GoXLd/gmmk-pro-OpenRGB/blob/main/files/gmmk_pro_rev1_ansi_qmmk_pro_OpenRGB.bin
+- QMMK VIA https://github.com/GoXLd/gmmk-pro-OpenRGB/blob/main/files/gmmk_pro_rev1_ansi_qmmk_pro_VIA.bin
 
 ## Layers
 
@@ -103,15 +103,15 @@ Source code for keyboard layout editor images can be found [here](https://gist.g
 
 ### Layer 0
 
-![Layer 0](https://github.com/GoXLd/gmmk-pro-OpenRGB/blob/main/files/layer0.png)
+![Layer 0](https://github.com/GoXLd/gmmk-pro-OpenRGB/blob/main/files/img/layer0.png)
 
 ### Layer 1
 
-![Layer 1](https://github.com/GoXLd/gmmk-pro-OpenRGB/blob/main/files/layer1.png)
+![Layer 1](https://github.com/GoXLd/gmmk-pro-OpenRGB/blob/main/files/img/layer1.png)
 
 ### Layer 2
 
-![Layer 2](https://github.com/GoXLd/gmmk-pro-OpenRGB/blob/main/files/layer2.png)
+![Layer 2](https://github.com/GoXLd/gmmk-pro-OpenRGB/blob/main/files/img/layer2.png)
 
 ## Miscellaneous
 
