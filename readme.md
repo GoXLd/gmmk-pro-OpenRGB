@@ -19,7 +19,7 @@ C:\Users\username\qmk_firmware\keyboards\gmmk\pro\rev1\ansi\keymaps\
 ```
 
 ## QMK Pro for OpenRGB
-![OpenRGB(files\img\photo_2024-08-09_10-14-18.jpg)
+!OpenRGB(files\img\photo_2024-08-09_10-14-18.jpg)
 To compile **`qmmk_pro_OpenRGB`**, follow the instructions by [ringowu1234 on Reddit](https://www.reddit.com/r/OpenRGB/comments/105djz3/comment/j3vfnxc/).
 
 ### GMMK Pro Address for OpenRGB
