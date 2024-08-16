@@ -134,3 +134,6 @@ Special thanks to:
 - [@trwnh (GitHub)](https://github.com/trwnh)
 - [@ringowu1234 (Reddit)](https://www.reddit.com/user/ringowu1234/)
 - [@Ryuu_Dango (Reddit)](https://www.reddit.com/user/Ryuu_Dango)
+
+
+Changelog: 16.08.2024 incraise 2ms polling interval ms 2 / some typing errors on 1ms / .bin updated + tested
