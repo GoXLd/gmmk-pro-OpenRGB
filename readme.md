@@ -136,4 +136,6 @@ Special thanks to:
 - [@Ryuu_Dango (Reddit)](https://www.reddit.com/user/Ryuu_Dango)
 
 
-Changelog: 16.08.2024 incraise 2ms polling interval ms 2 / some typing errors on 1ms / .bin updated + tested
+Changelog: 
+16.08.2024 incraise 2ms polling interval ms 2 / some typing errors on 1ms / .bin updated + tested
+23.08.2024 QMMK_PRO_VIA Changed DEBOUNCE_TYPE to sym_defer_g: Updated debounce algorithm for improved resistance to key bounce, reducing the likelihood of accidental double key presses. Increased USB_POLLING_INTERVAL_MS to 4 ms: Adjusted USB polling interval to decrease the chance of key bounce being registered, optimizing overall stability of key inputs. /.bin updates + tested
