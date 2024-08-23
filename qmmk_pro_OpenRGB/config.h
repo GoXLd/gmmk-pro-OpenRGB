@@ -1,7 +1,7 @@
 // Copyright 2021 a (@trwnh on Github)
 // SPDX-License-Identifier: GPL-2.0-or-later
 
-#pragma once
+#define USB_POLLING_INTERVAL_MS 4
 #ifdef RGB_MATRIX_ENABLE
 	#define RGB_DISABLE_WHEN_USB_SUSPENDED
 

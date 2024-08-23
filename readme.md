@@ -108,8 +108,8 @@ If the links are unavailable:
 
 Pre-compiled firmware gmmk pro ANSI ver.1:
 
-- [QMMK Open RGB](https://github.com/GoXLd/gmmk-pro-OpenRGB/blob/main/files/gmmk_pro_rev1_ansi_qmmk_pro_OpenRGB.bin) - (add OpenRGB support on Trwnh keyboard layout)
-- [QMMK VIA](https://github.com/GoXLd/gmmk-pro-OpenRGB/blob/main/files/gmmk_pro_rev1_ansi_qmmk_pro_VIA.bin)
+- [QMMK Open RGB](https://github.com/GoXLd/gmmk-pro-OpenRGB/blob/main/files/gmmk_pro_rev1_ansi_qmmk_pro_OpenRGB_4ms.bin) - (add OpenRGB support on Trwnh keyboard layout)
+- [QMMK VIA](https://github.com/GoXLd/gmmk-pro-OpenRGB/blob/main/files/gmmk_pro_rev1_ansi_qmmk_pro_VIA_4ms.bin)
 
 ## Layers
 
